@@ -225,7 +225,7 @@ li {
 }
 
 .logo > a {
-  padding: 10px 20px;
+  padding: 12px 40px;
   border: 1px solid #101010;
   border-radius: 6px;
   color: #101010;
@@ -289,7 +289,7 @@ li {
 
 .banner-left {
   width: 60%;
-  padding-top: 150px;
+  padding: 160px 0 154px;
 }
 
 .banner-right {
@@ -366,6 +366,74 @@ li {
 }
 /*************************************
   banner section styling ends here
+***************************************/
+
+/*************************************
+  choose section styling starts here
+***************************************/
+.choose-container {
+  display: flex;
+}
+
+.choose-left {
+  width: 60%;
+}
+.choose-right {
+  width: 40%;
+}
+
+.choose-left > img {
+  height: 790px;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+
+.choose-heading {
+  margin: 72px 0 50px;
+  font-size: 50px;
+}
+
+.list-container {
+  margin-left: 20px;
+}
+
+.list-container > li {
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.list-container > li:last-child {
+  margin-bottom: 0;
+}
+
+.list-container span {
+  color: #ddf247;
+  font-size: 50px;
+}
+
+.list-container p {
+  margin-left: 50px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/*************************************
+  choose section styling ends here
+***************************************/
+
+/*************************************
+  university section styling starts here
+***************************************/
+.university-list {
+  padding: 34px 0;
+  display: flex;
+  gap: 65px;
+  justify-content: center;
+  align-items: center;
+}
+/*************************************
+  university section styling ends here
 ***************************************/
 
 /*=================================
