@@ -254,7 +254,7 @@ li {
 
 .talk-btn {
   padding: 10px 20px;
-  border: none;
+  border: 1px solid #ddf252;
   border-radius: 6px;
   outline: none;
   color: #000;
@@ -281,7 +281,6 @@ li {
 ***************************************/
 .banner-section {
   position: relative;
-  /* top: 150px; */
 }
 
 .banner-container {
@@ -289,7 +288,81 @@ li {
 }
 
 .banner-left {
-  padding-top: 100px;
+  width: 60%;
+  padding-top: 150px;
+}
+
+.banner-right {
+  width: 40%;
+  padding-top: 50px;
+  position: relative;
+  background-color: #000;
+}
+
+.banner-right > img {
+  height: 80vh;
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  object-fit: cover;
+}
+
+.info {
+  font-size: 20px;
+}
+
+.banner-heading {
+  margin: 15px 0;
+  font-size: 75px;
+}
+
+.banner-heading > span {
+  display: block;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.register-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-right: 15px;
+  color: #fff;
+  background-color: #101010;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  color: #101010;
+  background-color: #fff;
+}
+
+.call-btn {
+  padding: 10px 20px;
+  border: 1px solid #101010;
+  border-radius: 6px;
+  color: #101010;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.call-btn:hover {
+  color: #fff;
+  background-color: #101010;
+}
+
+.circle-container {
+  margin-top: 20px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #d9d9d9;
+  text-indent: -9999px;
 }
 /*************************************
   banner section styling ends here
