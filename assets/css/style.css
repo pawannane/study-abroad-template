@@ -300,10 +300,10 @@ li {
 }
 
 .banner-right > img {
-  height: 80vh;
+  height: 110vh;
   position: absolute;
   bottom: 0;
-  left: -20%;
+  left: -5%;
   object-fit: cover;
 }
 
@@ -312,7 +312,7 @@ li {
 }
 
 .banner-heading {
-  margin: 15px 0;
+  margin: 32px 0;
   font-size: 75px;
 }
 
@@ -321,15 +321,16 @@ li {
 }
 
 .btn-container {
-  margin-top: 20px;
+  margin-top: 64px;
 }
 
 .register-btn {
-  padding: 10px 20px;
+  padding: 24px 75px;
   border-radius: 6px;
   margin-right: 15px;
   color: #fff;
   background-color: #101010;
+  font-size: 20px;
   transition: all 0.3s ease;
 }
 
@@ -339,11 +340,12 @@ li {
 }
 
 .call-btn {
-  padding: 10px 20px;
+  padding: 24px 75px;
   border: 1px solid #101010;
   border-radius: 6px;
   color: #101010;
   background-color: #fff;
+  font-size: 20px;
   transition: all 0.3s ease;
 }
 
@@ -353,16 +355,38 @@ li {
 }
 
 .circle-container {
-  margin-top: 20px;
+  margin-top: 64px;
+  position: relative;
 }
 
 .circle {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  border: 5px solid #f8f8f8;
   display: inline-block;
   background-color: #d9d9d9;
   text-indent: -9999px;
+}
+
+.circle:not(:first-child) {
+  position: absolute;
+}
+
+.circle:nth-child(2) {
+  left: 3%;
+}
+
+.circle:nth-child(3) {
+  left: 6%;
+}
+
+.circle:nth-child(4) {
+  left: 9%;
+}
+
+.circle:nth-child(5) {
+  left: 12%;
 }
 /*************************************
   banner section styling ends here
@@ -445,11 +469,291 @@ li {
 }
 
 .why-us-container {
+  display: flex;
+  background: linear-gradient(
+    270deg,
+    rgb(248, 248, 248) 0%,
+    rgba(248, 248, 248, 0) 12.56%
+  );
+}
+
+.why-heading {
+  font-size: 30px;
+  font-weight: 500;
+  width: 70%;
+}
+
+.why-us-left {
+  flex-basis: 40%;
+}
+
+.why-us-left .info {
+  margin: 20px 0 40px;
+}
+
+.why-us-left .wrapper {
+  margin-left: 18%;
+}
+
+.why-us-right {
+  flex-basis: 70%;
+}
+
+.why-slider {
+  display: flex;
+}
+
+.why-slider li {
+  background-color: #fff;
+  padding: 40px 2%;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.why-slider .active-slider {
+  background-color: #ddf247;
+}
+
+.why-slider .active-slider span {
+  padding: 8px 5%;
+  border-radius: 8px;
+  color: #000;
+  background-color: #fff;
+}
+
+.why-slider li:not(:last-child) {
+  margin-right: 2%;
+}
+
+.why-slider li span {
+  margin-left: 2%;
+  color: #ddf247;
+  font-size: 30px;
+}
+
+.why-slider li p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.slide-nav {
+  display: flex;
+  justify-content: center;
+  margin: 55px 0;
+}
+
+.slide-nav a {
+  background-color: #d3d1d1;
+  margin-right: 2%;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.slide-nav a:first-child {
+  width: 10%;
+  background-color: #ddf247;
+}
+
+.slide-nav a:not(:first-child) {
+  width: 4%;
 }
 /*************************************
   why-us section styling ends here
 ***************************************/
 
+/*************************************
+  counsellor section styling starts here
+***************************************/
+.counsellor-section {
+  padding: 90px 0;
+  background-color: #ddf247;
+}
+
+.counsellor-container {
+  display: flex;
+  align-items: center;
+  gap: 180px;
+}
+
+.counsellor-heading {
+  color: #101010;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.counsellor-btn {
+  height: 86px;
+  padding: 25px 60px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #101010;
+  font-size: 30px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.counsellor-btn:hover {
+  background-color: #101010;
+  color: #fff;
+}
+/*************************************
+  counsellor section styling ends here
+***************************************/
+
+/*************************************
+  why-us section styling ends here
+***************************************/
+.why-choose-container {
+  display: flex;
+}
+
+.why-choose-left {
+  width: 40%;
+  position: relative;
+  background-color: #000;
+}
+
+.why-choose-left > img {
+  height: 120vh;
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.why-choose-right {
+  width: 60%;
+  padding: 135px 138px 125px;
+}
+
+.why-choose-heading {
+  margin-bottom: 54px;
+  font-size: 60px;
+  color: #101010;
+}
+
+.next-btn {
+  padding: 24px 45px;
+  border: 1px solid #ddf247;
+  border-radius: 6px;
+  background-color: #ddf247;
+  color: #101010;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.next-btn:hover {
+  background-color: #101010;
+  color: #ddf247;
+}
+
+.why-list {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+}
+
+.why-list span {
+  color: #101010;
+  font-size: 50px;
+}
+
+.why-list p {
+  margin-top: 9px;
+  color: #101010;
+  font-size: 20px;
+}
+/*************************************
+  why-us section styling ends here
+***************************************/
+
+/*************************************
+  hear section Stylings starts
+***************************************/
+.hear-section {
+  background-color: #f8f8f8;
+}
+
+.hear-heading {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 60px;
+}
+
+.hear-list {
+  display: flex;
+  padding-top: 40px;
+}
+
+.hear-list li {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.hear-list li:not(:last-child) {
+  margin-right: 2%;
+}
+
+.hear-list li p {
+  padding: 12px;
+}
+
+.hear-list li .double-quotes {
+  font-size: 0;
+  font-family: "FontAwesome";
+  margin: 10px 5%;
+  color: #ddf252;
+}
+
+.hear-list li .double-quotes::after {
+  content: "\f10d";
+  font-size: 20px;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.name,
+.location {
+  margin-left: 4%;
+}
+
+.location {
+  display: block;
+}
+
+.rating {
+  margin: 10px 4% 20px;
+}
+
+.ellipis {
+  font-size: 0;
+  font-family: "FontAwesome";
+  color: #f8f8f8;
+}
+
+.ellipis::after {
+  content: "\f111";
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.ellipis:not(:last-child)::after {
+  margin-right: 3%;
+  color: #ddf252;
+}
+
+.hear-section .slide-nav {
+  padding-bottom: 30px;
+}
+/*************************************
+  hear section Stylings Ends
+***************************************/
 /*=================================
   main styling ends here
 =================================*/
@@ -457,7 +761,28 @@ li {
 /*=================================
   footer styling starts here
 =================================*/
+.footer-section {
+  padding: 58px 0 44px;
+  background-color: #101010;
+  color: #fff;
+}
 
+.footer-heading {
+  font-size: 50px;
+  text-align: center;
+}
+
+.footer-nav {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 185px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: underline;
+}
 /*=================================
   footer styling ends here
 =================================*/
