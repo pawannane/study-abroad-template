@@ -231,6 +231,11 @@ li {
   color: #101010;
   font-size: 25px;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.logo > a:hover {
+  background-color: #ddf247;
 }
 
 .nav {
@@ -294,17 +299,21 @@ li {
 
 .banner-right {
   width: 40%;
-  padding-top: 50px;
+}
+
+.girl-img {
+  height: 100%;
   position: relative;
   background-color: #000;
 }
 
-.banner-right > img {
-  height: 110vh;
+.girl-img img {
+  height: 90%;
   position: absolute;
   bottom: 0;
-  left: -5%;
+  left: -15%;
   object-fit: cover;
+  overflow-x: inherit;
 }
 
 .info {
@@ -610,16 +619,20 @@ li {
 
 .why-choose-left {
   width: 40%;
+}
+
+.boy-img {
+  height: 100%;
   position: relative;
   background-color: #000;
 }
-
-.why-choose-left > img {
-  height: 120vh;
+.why-choose-left img {
+  height: 90%;
   position: absolute;
-  right: -10%;
+  right: -5%;
   bottom: 0;
   object-fit: cover;
+  overflow-x: inherit;
 }
 
 .why-choose-right {
