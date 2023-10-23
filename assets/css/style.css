@@ -436,6 +436,20 @@ li {
   university section styling ends here
 ***************************************/
 
+/*************************************
+  why-us section styling starts here
+***************************************/
+.why-us-section {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+
+.why-us-container {
+}
+/*************************************
+  why-us section styling ends here
+***************************************/
+
 /*=================================
   main styling ends here
 =================================*/
